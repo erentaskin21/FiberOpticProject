@@ -7,7 +7,7 @@ public class SayfaGecisleri : MonoBehaviour
 {
     public void Start()
     {
-        SceneManager.LoadScene("start");  
+        //  SceneManager.LoadScene("Start");  
     }
 
     public void Menu()
@@ -25,4 +25,43 @@ public class SayfaGecisleri : MonoBehaviour
         SceneManager.LoadScene("Giris");
     }
 
+
+    public void OnClickKayitOl()
+    {
+        if(!CheckSifre() || !CheckIsim() || !CheckTc())
+        {
+            //uyarý ver hatalý giriþ
+        }
+        else
+        {
+            //aferin
+        }
+    }
+
+    public bool CheckTc()
+    {
+        string tc = "";
+        if(string.IsNullOrEmpty(tc))
+        {
+            return false;
+        }
+        return true;
+
+    }
+
+
+
+    public bool CheckIsim()
+    {
+        return true;
+
+    }
+
+
+    public bool CheckSifre()
+    {
+        return true;
+
+
+    }
 }

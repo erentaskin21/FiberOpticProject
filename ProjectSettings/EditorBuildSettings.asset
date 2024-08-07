@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: c5acb131a62eec7429af9a719b5056a8
   - enabled: 1
-    path: Assets/Scenes/Register.unity
-    guid: b7e1529f40a2bfa47bff5e8f05ec49cc
-  - enabled: 1
     path: Assets/Scenes/Giris.unity
     guid: 46a75dccfd3f85b4488c3c0ad261cacd
+  - enabled: 1
+    path: Assets/Scenes/Register.unity
+    guid: b7e1529f40a2bfa47bff5e8f05ec49cc
   m_configObjects: {}
