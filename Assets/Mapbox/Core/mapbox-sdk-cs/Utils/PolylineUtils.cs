@@ -99,12 +99,17 @@ namespace Mapbox.Utils
 			return result.ToString();
 		}
 
-		/// <summary>
-		/// Encode the latitude or longitude.
-		/// </summary>
-		/// <param name="variable">The value to encode.</param>
-		/// <param name="result">String representation of latitude or longitude.</param>
-		private static void Encode(long variable, StringBuilder result)
+        internal static List<Vector2d> Decode(List<Vector2d> geometry, int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Encode the latitude or longitude.
+        /// </summary>
+        /// <param name="variable">The value to encode.</param>
+        /// <param name="result">String representation of latitude or longitude.</param>
+        private static void Encode(long variable, StringBuilder result)
 		{
 			variable = variable < 0 ? ~(variable << 1) : variable << 1;
 			while (variable >= 0x20)
